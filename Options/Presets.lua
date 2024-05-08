@@ -1,6 +1,10 @@
 
 local _, scope = ...
 scope.presets = {
+	mooEmotes = {
+		542820, -- taurenfemalemoo01
+		542894, -- taurenmalemoo01
+	},
 	lfgping = { -- LFG people requesting to join your group ping
 		1067667, -- sound/interface/ui_groupfinderreceiveapplication_01.ogg
 	},
@@ -23,64 +27,41 @@ scope.presets = {
 		3598635, -- catmount_cast_oneshot_3598635
 		3598637, -- catmount_cast_oneshot_3598637
 	},
-	choochooEmotes = {
-		540734, -- humanmalechoochoo01
-		540535, -- humanfemalechoochoo01
-		539881, -- dwarfmalechoochoo01
-		539802, -- dwarffemalechoochoo01
-		540271, -- gnomefemalechoochoo01
-		540275, -- gnomemalechoochoo01
-		540870, -- nightelffemalechoochoo01
-		540947, -- nightelfmalechoochoo01
-		541239, -- orcmalechoochoo01
-		541157, -- orcfemalechoochoo01
-		542600, -- undeadmalechoochoo01
-		542526, -- undeadfemalechoochoo01
-		542896, -- taurenmalechoochoo01
-		542818, -- taurenfemalechoochoo01
-		543093, -- trollmalechoochoo01
-		543085, -- trollfemalechoochoo01
-		539219, -- bloodelffemaletrain01
-		539203, -- bloodelfmaletrain01
-		539516, -- draeneifemaletrain01
-		539730, -- draeneimaletrain01
-		541463, -- vo_pcgilneanfemale_train01
-		541601, -- vo_pcgilneanmale_train01
-		542017, -- vo_pcgoblinmale_train01
-		541769, -- vo_pcgoblinfemale_train01
-		542206, -- vo_pcworgenmale_train01
-		542035, -- vo_pcworgenfemale_train01
-		630296, -- vo_pcpandarenmale_train01
-		630298, -- vo_pcpandarenmale_train02
-		636621, -- vo_pcpandarenfemale_train01
-		1306531, -- vo_dhbloodelfmaletrain01
-		1313588, -- vo_dhbloodelffemale_train01
-		1304872, -- vo_dhnightelfmalechoochoo01
-		1316209, -- vo_dhnightelffemale_choochoo01
-		1733163, -- vo_735_pc_-_void_elf_male_194_m
-		1732785, -- vo_735_pc_-_void_elf_female_194_f
-		1730908, -- vo_735_pc_-_highmountain_tauren_male_193_m
-		1730534, -- vo_735_pc_-_highmountain_tauren_female_193_f
-		1731282, -- vo_735_pc_-_lightforged_draenei_female_193_f
-		1731656, -- vo_735_pc_-_lightforged_draenei_male_193_m
-		1732030, -- vo_735_pc_-_nightborne_elf_female_193_f
-		1732405, -- vo_735_pc_-_nightborne_elf_male_193_m
-		1902030, -- vo_801_pc_dark_iron_dwarf_female_342_f
-		1902543, -- vo_801_pc_dark_iron_dwarf_male_342_m
-		1951457, -- vo_801_pc_maghar_orc_female_157_f
-		1951458, -- vo_801_pc_maghar_orc_male_157_m
-		1903049, -- vo_801_pc_zandalari_troll_female_335_f
-		1903522, -- vo_801_pc_zandalari_troll_male_295_m
-		2531204, -- vo_815_pc_kul_tiran_human_female_196_f
-		2491898, -- vo_815_pc_kul_tiran_human_male_16_m
-		3107182, -- vo_83_pc_mechagnome_male_155_m
-		3107651, -- vo_83_pc_mechagnome_female_155_f
-		3106252, -- vo_83_pc_vulpera_female_155_f
-		3106717, -- vo_83_pc_vulpera_male_155_m
+	bellTolls = {
+		566564, -- Bell Toll Alliance
+		565853, -- Bell Toll Horde
+		566558, -- Bell Toll Night Elf
+		566027, -- Bell Toll Tribal
+		566254, -- Bell Toll Kharazhan
+		566064, -- Bell Toll Dwarf/Gnome
 	},
-	mooEmotes = {
-		542820, -- taurenfemalemoo01
-		542894, -- taurenmalemoo01
+	choochooEmotes = {
+		539219, 539203, 1313588, 1306531, --Blood Elf
+		539516, 539730, -- Draenei
+		539881, 539802, -- Dwarf
+		540271, 540275, -- Gnome
+		541769, 542017, -- Goblin
+		540734, 540535, -- Human
+		540870, 540947, 1316209, 1304872, -- Night Elf
+		541157, 541239, -- Orc
+		636621, 630296, 630298, -- Pandaren
+		542818, 542896, -- Tauren
+		543085, 543093, -- Troll
+		542526, 542600, -- Undead
+		542035, 542206, 541463, 541601, -- Worgen
+		1902030, 1902543, -- Dark Iron Dwarf
+		1730534, 1730908, -- Highmountain Tauren
+		2531204, 2491898, -- Kul Tiran
+		1731282, 1731656, -- Lightforged Draenei
+		1951457, 1951458, -- Mag'har Orc
+		3107651, 3107182, -- Mechagnome
+		1732030, 1732405, -- Nightborne
+		1733163, 1732785, -- Void Elf
+		3106252, 3106717, -- Vulpera
+		1903049, 1903522, -- Zandalari Troll
+	},
+	muteDucks = {
+		4618261, 4618263, 4618265, 4618267, 4618269, 4618271, 4618273, 4618275, 4618277, 4618279, 4618281, 4618283, 4618285, 4618287, 4618289, 4618291, 4741268, 4741270, 4741272, 4741274, 4741276, 4741278, 4741280, 4741282, 4741284, 4741286, 4741288, 4741290, 4741292, 4741294, 4741296, 4741298, -- sound/creature/duck/duck_greetings_
 	},
 	peaFowl = {
 		5546937, -- peacockmount_cast_oneshot_5546937
@@ -99,4 +80,11 @@ scope.presets = {
 		5546614, -- peacockmount_moving_5546614
 		5546616, -- peacockmount_moving_5546616
 	},
+	spellFizzle = {
+		569772, -- Holy Fizzle
+		569773, -- Fire Fizzle
+		569774, -- Nature Fizzle
+		569775, -- Frost Fizzle
+		569776, -- Shadow Fizzle
+	}
 }
